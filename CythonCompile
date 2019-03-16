@@ -1,0 +1,16 @@
+#!/bin/bash
+
+module load Anaconda2
+
+echo "copying *.py files to *.pyx files..."
+cp FactorGraph.py FactorGraph.pyx
+cp Interactions.py Interactions.pyx
+
+python setup.py build_ext --inplace
+
+cp MemoryModule/* .
+
+rm *.pyx *.c
+
+rm -R MemoryModule build
+

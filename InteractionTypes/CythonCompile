@@ -1,0 +1,16 @@
+#!/bin/bash
+
+module load Anaconda2
+
+echo "copying *.py files to *.pyx files..."
+cp Cusp.py Cusp.pyx
+cp GCup.py GCup.pyx
+
+python setup.py build_ext --inplace
+
+cp MemoryModule/InteractionTypes/* .
+
+rm *.pyx *.c
+
+rm -R MemoryModule build
+
