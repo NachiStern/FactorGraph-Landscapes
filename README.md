@@ -7,7 +7,7 @@ FactorGraphh-Landscapes is a python program made for seamless construction and e
 Written in Cython-boosted Python, the code is meant to facilitate exploration of general energy landscapes. It ths support independent (and mutual) optimization of the object and interaction terms. Optimization of the object terms (physical variables) is supposed akin to minimizing the statistical free energy and finding stable points of the system, while interaction optimization is closely related to statistical (machine-)learning.
 
 
-# MIT License
+## MIT License
 
 ## Copyright (c) 2019 Menachem Stern
 
